@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://db.onlinewebfonts.com/c/f3770871c2641a8f6d85990790a0e7e9?family=Stencil+Regular"
+        rel="stylesheet" type="text/css" />
+    <link href="https://db.onlinewebfonts.com/c/09733c672c8b82dc8c03fc303e117220?family=Cascadia+Mono" rel="stylesheet"
+        type="text/css" />
+    <title>Studenti u blokadi</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Cascadia Mono";
+            background-size: cover;
+            background-color: #080808;
+            color: black;
+            line-height: normal;
+            text-wrap: wrap;
+        }
+
+        h1 {
+            margin: 20px 0;
+            text-align: left;
+            font-size: 4.5vw;
+            color: black;
+            line-height: 90%;
+            font-family: "Stencil Regular";
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        div {
+            box-sizing: border-box;
+            background-size: contain;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .over-text {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            top: 0px;
+        }
+
+        .content {
+            position: relative;
+            top: 0px;
+            border: 1.5vw solid #080808;
+            height: min-content;
+        }
+
+        .menu {
+            font-family: "Stencil Regular";
+            position: absolute;
+            display: flex;
+            justify-content: space-evenly;
+            text-align: justify;
+            bottom: 0px;
+            background: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            padding: 0.4em;
+        }
+
+        .menu a {
+            color: #8c0000;
+            margin: 0 10px;
+            font-size: 2em;
+        }
+
+        .menu a:hover {
+            color: rgb(164, 12, 12)
+        }
+
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            justify-content: center;
+            padding: 6vh;
+            padding-top: 10vh;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.1);
+        }
+
+        .social-links img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="width: 100%;">
+        <img src="Slika protesta-main background.png" style="width: 100%;">
+        <div class="centered" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 17vw;
+        letter-spacing: 2vw;
+        color: #8c0000;
+        opacity: 0.8;
+        margin-left: 1.5vw;">11:52</div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="container" style="width: 100%;height: fit-content;display: flex;
+  flex-wrap: no-wrap; flex-direction: row;">
+        <div class="content" style="flex: 2; border-right-width: 0px;background-image: url(tekst\ o\ blokadi.png);">
+            <img src="tekst o blokadi.png">
+            <div class="over-text"><h1>TEKST O BLOKADI</h1></div>
+            <div style="position: relative;"><a href="https://blokada.rs/josteksta" target="_self"><img
+                        src="svi u blokade.png" alt="" style="border-top: 1.5vw solid #080808;">
+                <div class="centered"><h1 style="text-wrap: nowrap;">SVI U BLOKADU</h1></div>
+                    
+                </a></div>
+
+        </div>
+        <div class="content" style="right:0px;flex: 1;">
+            <img src="fakulteti u blokadi.png">
+            <div class="over-text">
+                <h1>FAKULTETI U BLOKADI</h1>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="content" style="width: 100%; border-top: none;"><img src="postovi.png"></div>
+    <div class="container"
+        style="background-color: #080808; justify-content: center;text-align: center; border: thick solid #080808; bottom: 0px;">
+        <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="https://i.pinimg.com/736x/2a/89/fe/2a89fee1a635745cec680e88efa49bcc.jpg" alt="Facebook">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="https://via.placeholder.com/24?text=T" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="https://via.placeholder.com/24?text=I" alt="Instagram">
+            </a>
+        </div>
+        <p style="color: gray;">STUDENTI BG I U UNIVERZITETA</p>
+    </div>
+</body>
+
+</html>
