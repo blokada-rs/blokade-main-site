@@ -19,7 +19,7 @@ jobs:
 
       - name: Ensure permissiosn on
         run: |
-          chown -R $USER:$USER ${{ env.DEPLOY_DIR }}
+          chown -R $USER:www-data ${{ env.DEPLOY_DIR }}
 
       - name: Deploy Static Site
         run: |
