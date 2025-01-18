@@ -19,11 +19,11 @@ jobs:
 
       - name: Ensure permissiosn on
         run: |
-          sudo chown -R $USER:$USER ${{ env.DEPLOY_DIR }}
+          chown -R $USER:$USER ${{ env.DEPLOY_DIR }}
 
       - name: Deploy Static Site
         run: |
-          sudo rsync -av --delete ./public_html/ ${{ env.DEPLOY_DIR }}
+          rsync -av --delete ./public_html/ ${{ env.DEPLOY_DIR }}
 
       # Restart Nginx to apply changes
       - name: Restart Nginx
