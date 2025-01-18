@@ -1,0 +1,31 @@
+name: Deploy Static Site to Webserver
+
+env:
+  DEPLOY_DIR: "/home/blokadars/blokadars_static/public_html/"
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy Static Site to Webserver
+    runs-on: www-fr1
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Ensure permissiosn on
+        run: |
+          sudo chown -R $USER:$USER ${{ env.DEPLOY_DIR }}
+
+      - name: Deploy Static Site
+        run: |
+          sudo rsync -av --delete ./public_html/ ${{ env.DEPLOY_DIR }}
+
+      # Restart Nginx to apply changes
+      - name: Restart Nginx
+        run: |
+          sudo systemctl restart nginx
